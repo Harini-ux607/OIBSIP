@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.calculator {
+    width: 350px;
+
+    padding: 25px;
+
+    background-color: #222;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.calculator h1 {
+    text-align: center;
+
+    color: white;
+
+    margin-bottom: 20px;
+
+    font-size: 24px;
+}
+
+.display {
+    min-height: 90px;
+
+    padding: 15px;
+
+    margin-bottom: 20px;
+
+    background-color: #111;
+
+    border-radius: 10px;
+
+    color: white;
+
+    text-align: right;
+
+    overflow: hidden;
+}
+
+#expression {
+    min-height: 35px;
+
+    font-size: 25px;
+
+    word-wrap: break-word;
+}
+
+#result {
+    min-height: 25px;
+
+    margin-top: 5px;
+
+    font-size: 18px;
+
+    color: #aaa;
+}
+
+.buttons {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 10px;
+}
+
+button {
+    height: 60px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+    background-color: #eee;
+
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: scale(1.03);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.operator {
+    background-color: #ff9500;
+
+    color: white;
+}
+
+.clear {
+    background-color: #e74c3c;
+
+    color: white;
+}
+
+.delete {
+    background-color: #555;
+
+    color: white;
+}
+
+.equals {
+    grid-row: span 2;
+
+    background-color: #27ae60;
+
+    color: white;
+
+    height: 130px;
+}
+
+#decimal {
+    background-color: #ddd;
+}
+
+.zero {
+    grid-column: span 2;
+}
+
+.error {
+    color: #ff4d4d !important;
+}
+
+@media (max-width: 400px) {
+
+    .calculator {
+        width: 90%;
+        padding: 18px;
+    }
+
+    button {
+        height: 55px;
+    }
+
+    .equals {
+        height: 120px;
+    }
+}
