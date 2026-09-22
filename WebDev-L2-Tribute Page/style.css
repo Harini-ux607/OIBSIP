@@ -1,0 +1,261 @@
+/* =========================
+   GENERAL STYLING
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    min-height: 300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    background-color: #183b56;
+
+    color: white;
+}
+
+.hero-content h1 {
+    font-family: Georgia, serif;
+
+    font-size: 48px;
+
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 20px;
+}
+
+
+/* =========================
+   IMAGE SECTION
+========================= */
+
+.image-section {
+    text-align: center;
+
+    padding: 40px 20px;
+
+    background-color: #ffffff;
+}
+
+.image-section img {
+    width: 300px;
+    max-width: 100%;
+
+    height: auto;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.caption {
+    margin-top: 15px;
+
+    font-style: italic;
+
+    color: #666;
+}
+
+
+/* =========================
+   BIOGRAPHY
+========================= */
+
+.biography {
+    max-width: 900px;
+
+    margin: auto;
+
+    padding: 60px 25px;
+
+    background-color: #eaf4f4;
+}
+
+.biography h2,
+.achievements h2 {
+    font-family: Georgia, serif;
+
+    font-size: 34px;
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+    color: #183b56;
+}
+
+.biography p {
+    margin-bottom: 20px;
+
+    font-size: 17px;
+
+    text-align: justify;
+}
+
+
+/* =========================
+   ACHIEVEMENTS
+========================= */
+
+.achievements {
+    padding: 60px 20px;
+
+    background-color: #fff7e6;
+}
+
+.timeline {
+    max-width: 900px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+.timeline-item {
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    border-left: 5px solid #183b56;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item span {
+    display: inline-block;
+
+    margin-bottom: 10px;
+
+    padding: 5px 12px;
+
+    border-radius: 20px;
+
+    background-color: #183b56;
+
+    color: white;
+
+    font-weight: bold;
+}
+
+.timeline-item h3 {
+    font-family: Georgia, serif;
+
+    margin-bottom: 8px;
+
+    font-size: 22px;
+}
+
+.timeline-item p {
+    font-size: 16px;
+}
+
+
+/* =========================
+   QUOTE
+========================= */
+
+.quote-section {
+    padding: 70px 25px;
+
+    text-align: center;
+
+    background-color: #183b56;
+
+    color: white;
+}
+
+blockquote {
+    max-width: 800px;
+
+    margin: auto;
+
+    font-family: Georgia, serif;
+
+    font-size: 30px;
+
+    font-style: italic;
+}
+
+.quote-section p {
+    margin-top: 20px;
+
+    font-size: 18px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 25px;
+
+    text-align: center;
+
+    background-color: #111;
+
+    color: white;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 700px) {
+
+    .hero-content h1 {
+        font-size: 34px;
+    }
+
+    .hero-content p {
+        font-size: 17px;
+    }
+
+    .biography h2,
+    .achievements h2 {
+        font-size: 28px;
+    }
+
+    .timeline {
+        grid-template-columns: 1fr;
+    }
+
+    blockquote {
+        font-size: 23px;
+    }
+
+    .image-section img {
+        width: 250px;
+    }
+}
