@@ -1,0 +1,295 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    min-height: 100vh;
+
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #667eea,
+        #764ba2
+    );
+}
+
+
+/* =========================
+   AUTH CONTAINER
+========================= */
+
+.auth-container {
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
+}
+
+
+/* =========================
+   AUTH CARD
+========================= */
+
+.auth-card {
+    width: 100%;
+
+    max-width: 420px;
+
+    padding: 35px;
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+.auth-card h1 {
+    text-align: center;
+
+    font-family: Georgia, serif;
+
+    color: #333;
+
+    margin-bottom: 10px;
+}
+
+
+.subtitle {
+    text-align: center;
+
+    color: #777;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+form {
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+label {
+    margin-bottom: 7px;
+
+    color: #333;
+
+    font-weight: bold;
+}
+
+
+input {
+    padding: 13px;
+
+    margin-bottom: 20px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 7px;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+
+input:focus {
+    border-color: #667eea;
+}
+
+
+button {
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background-color: #667eea;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+button:hover {
+    background-color: #5568d9;
+}
+
+
+/* =========================
+   MESSAGE
+========================= */
+
+.message {
+    min-height: 25px;
+
+    margin-top: 12px;
+
+    text-align: center;
+
+    font-size: 14px;
+}
+
+
+.error {
+    color: #e74c3c;
+}
+
+
+.success {
+    color: #27ae60;
+}
+
+
+/* =========================
+   SWITCH PAGE
+========================= */
+
+.switch-page {
+    margin-top: 25px;
+
+    text-align: center;
+
+    color: #666;
+}
+
+
+.switch-page a {
+    color: #667eea;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   DASHBOARD
+========================= */
+
+.dashboard {
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
+}
+
+
+.dashboard-card {
+    width: 100%;
+
+    max-width: 600px;
+
+    padding: 45px;
+
+    text-align: center;
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+.dashboard-card h1 {
+    font-family: Georgia, serif;
+
+    color: #333;
+
+    margin-bottom: 20px;
+}
+
+
+#welcomeUser {
+    font-size: 20px;
+
+    color: #667eea;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+
+.dashboard-text {
+    color: #666;
+
+    line-height: 1.6;
+
+    margin-bottom: 30px;
+}
+
+
+.logout-button {
+    width: 150px;
+
+    background-color: #e74c3c;
+}
+
+
+.logout-button:hover {
+    background-color: #c0392b;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 500px) {
+
+    .auth-card {
+        padding: 25px;
+    }
+
+    .dashboard-card {
+        padding: 30px 20px;
+    }
+
+    .auth-card h1 {
+        font-size: 28px;
+    }
+
+    .dashboard-card h1 {
+        font-size: 26px;
+    }
+
+}
